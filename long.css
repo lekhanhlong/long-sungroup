@@ -1,0 +1,1054 @@
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body{background:#0c192c ;
+      width: 100%;
+      font-family: Roboto-Black;}
+
+
+
+
+
+
+#top {
+  position: sticky;
+  top: 5px;
+  z-index: 100;
+  width: 100%;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  width: 280px;
+  height: 30px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 9px 9px 18px rgba(0, 0, 0, 0.5),
+              -9px -9px 18px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+ul li:hover {
+  border-radius: 50px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  box-shadow: inset 9px 9px 1px rgba(0, 0, 0, 0.5),
+              inset -5px -5px 1px rgba(0, 0, 0, 0.7);
+}
+
+ul li ion-icon {
+  color: #fff;
+  font-size: 18px;
+  transition: 0.5s;
+  transition-delay: 0s;
+  transform: translateX(-60px);
+}
+
+
+ul li:hover ion-icon {
+  font-size: 14px;
+}
+
+ul li span {
+  position: absolute;
+}
+
+ul li .title {
+  color: #fff;
+  font-size: 15px;
+  transform: scale(1);
+  transition: 0.5s;
+  transition-delay: 0s;
+  transform: translateX(20px);
+}
+
+ul li:hover .title {
+  font-size: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  color: #FF0000;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle .hamburger-icon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.menu-toggle .menu-text {
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+#two{
+  width:100%; 
+  position:relative;
+  overflow:hidden; 
+  }
+
+#two #anhnen{
+  object-fit:fill;position: relative;
+  width: 100%; height: 100%;
+}
+
+#dn{
+  margin-left: 35px;
+  font-size: 27px;
+  color:  #FFF;
+  margin-top: 10px;
+ }
+
+  #dautiensun{width: 100%}
+ #dautiensun #dautiensunh1 {
+  position: relative;
+  text-align: left;
+  font-size: 19px;
+  color:  #EEC591;
+  margin-top: 10px;
+  margin-left: 5px;
+ }
+ #dautiensun #dautiensunp1{
+  position: relative;
+  text-align: left;
+  font-size: 15px;
+  color:  #FFf;
+  margin-top: 10px;
+  margin-left: 5px;
+ }
+
+ #tenvideo #tenvideo1{
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  color:  #FFf;
+  margin-top: 3px;
+  margin-left: 5px;
+ }
+
+ #noidung1{width: 100%}
+ #noidung1 h2{
+  position: relative;
+  text-align: left;
+  font-size: 19px;
+  color:  #EEC591;
+  margin-top: 8px;
+  margin-left: 5px;
+ }
+ #noidung1 p{
+   position: relative;
+  text-align: left;
+  font-size: 15px;
+  color:  #FFf;
+  margin-top: 3px;
+  margin-left: 5px;
+ }
+ #tongquan{
+  position: relative;
+  width: 100%;
+ }
+#tongquan img{
+  position: relative;
+   width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+
+}
+
+#vitri{
+  position: relative;
+  width: 100%;
+}
+#vitri h3{
+  position: relative;
+  text-align: center;
+  font-size: 19px;
+color: #fff;
+}
+#vitri p{
+  position: relative;
+  text-align: left;
+  font-size: 15px;
+  color:  #FFf;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+#vitri img{
+  position: relative;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 0.5%;
+}
+#vitri #vitricuoi{
+   position: relative;
+  text-align: center;
+  font-size: 12px;
+  color:  #FFf;
+}
+#ttvitri {
+  position: relative;
+  width: 100%;
+}
+#ttvitri h4{
+  position: relative;
+  text-align: left;
+  font-size: 15px;
+  color:  #FFf;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+#ttvitri h4 b {
+   color: #EEC591;
+}
+#ttvitri img {
+  position: relative;
+   width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%
+}
+#ttvitri p {
+   position: relative;
+  text-align: center;
+  font-size: 12px;
+  color:  #FFf;
+}
+#ttvitri h5{
+  color: #EEC591;
+  font-size: 15px;
+  margin-left: 5px;
+}
+#ttvitri h6{
+  font-size: 15px;
+  color: #fff;
+   margin-left: 5px;
+}
+#t3vitri {
+  position: relative;
+  width: 100%;
+}
+#t3vitri p{
+  font-size: 19px;
+color: #fff;
+text-align: center;
+}
+#t3vitri #t3vitrip{
+   font-size: 15px;
+  color: #fff;
+}
+#t3vitri img{
+  position: relative;
+   width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%
+}
+#chumanh {
+  position: relative;
+  width: 100%;
+  margin-top: 2%;
+}
+#chumanh img{
+  width: 48%;height: 60vh;
+  object-fit:fill;
+  border-radius: 2%;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 0.5%;
+}
+#cuoi{
+  width: 100%;
+  position:relative;
+}
+  
+  #cuoi img{
+    object-fit: fill;
+    width: 100%;
+    height: 80vh;
+    margin-top: 3%
+  }
+#layuottangs1{
+  width: 100%;
+}
+#layuottangs1 p{
+  font-size: 25px;
+color: #fff;
+text-align: center;
+margin-top: 2%;
+}
+#layuottangs1 img{
+  width: 48%;height:50vh;
+  object-fit:fill;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 2%;
+}
+#layuotcans1 {
+  width: 100%;
+}
+#layuotcans1 p {
+  font-size: 25px;
+color: #fff;
+text-align: center;
+margin-top: 2%;
+}
+#layuotcans1 img{
+  width: 48%;height:50vh;
+  object-fit:fill;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 2%;
+}
+#layouttangs2{
+  width: 100%;
+}
+#layouttangs2 p{
+  font-size: 25px;
+color: #fff;
+text-align: center;
+margin-top: 2%;
+}
+#layouttangs2 img{
+  object-fit:contain;
+  width: 24%;height:50vh;
+  float: left;
+  margin-top: 2%;
+}
+#layuotcans2{
+  width: 100%;
+}
+#layuotcans2 p{
+  font-size: 25px;
+color: #fff;
+text-align: center;
+margin-top: 2%;
+}
+#layuotcans2 img{
+  width: 48%;height:50vh;
+  object-fit:fill;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 2%;
+}
+
+#layuotcans3{
+  width: 100%;
+}
+#layuotcans3 img{
+  width: 48%;height:50vh;
+  object-fit:fill;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 2%;
+}
+
+/*form thông tin*/ 
+form {
+            background: #003366;
+ margin-left: auto; margin-right: auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 100%;
+           
+            margin-top: 1%;
+        }
+
+        h2 {
+            margin-bottom: 40px;
+            text-align: center;
+            color: #fff;
+        }
+        p{
+          text-align: center;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            box-sizing: border-box;
+            font-size: 22px;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            border-color: #FF3333;
+            outline: none;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #FF3333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 22px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #FF0000;
+        }
+        #productType{
+          width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            box-sizing: border-box;
+            font-size: 22px;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease;
+        }
+        #productType:focus{
+          border-color: #FF3333;
+        }
+
+
+/* Điện thoại*/
+.phone-icon, .zalo-icon {
+    position: fixed;
+    right: 20px;
+    z-index: 1000;
+}
+
+.phone-icon {
+    bottom: 20px;
+}
+
+.zalo-icon {
+    bottom: 100px; /* Điều chỉnh vị trí Zalo nằm trên điện thoại */
+}
+
+.phone-link, .zalo-link {
+    text-decoration: none;
+}
+
+.icon-circle, .zalo-circle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FF0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.zalo-circle {
+    background-color: #0084ff; /* Màu xanh Zalo */
+}
+
+.icon-circle:hover, .zalo-circle:hover {
+    transform: scale(1.1);
+}
+
+.phone-icon-img i {
+    font-size: 28px;
+    color: #FFFF00;
+}
+
+.zalo-circle img {
+    width: 75%;
+    height: 50%;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+}
+
+.flag-wave-container {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: -30px;
+    left: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.flag-wave {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url('img/covietnam.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: flag-pulse 2s infinite;
+}
+
+@keyframes flag-pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* Vị trí các lá cờ */
+.flag1 { top: 0; left: 50%; transform: translate(-50%, -100%); }
+.flag2 { top: 15%; left: 85%; transform: translate(-50%, -50%); }
+.flag3 { top: 50%; left: 100%; transform: translate(-50%, -50%); }
+.flag4 { top: 85%; left: 85%; transform: translate(-50%, -50%); }
+.flag5 { bottom: 0; left: 50%; transform: translate(-50%, 0); }
+.flag6 { top: 85%; left: 15%; transform: translate(-50%, -50%); }
+.flag7 { top: 50%; left: 0; transform: translate(-50%, -50%); }
+
+.flag-wave1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%);
+    animation: pulse1 2s infinite;
+    z-index: -1;
+}
+
+@keyframes pulse1 {
+    0% {
+        transform: scale(0.7);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+
+
+/*TOWN HOUSE 5 TẦNG*/
+#t4vitri {
+  position: relative;
+  width: 100%;
+}
+#t4vitri p{
+  font-size: 19px;
+color: #fff;
+text-align: center;
+}
+#chumanh1 {
+  position: relative;
+  width: 100%;
+  margin-top: 2%;
+}
+#chumanh1 img{
+  width: 48%;height: 60vh;
+  object-fit:fill;
+  border-radius: 2%;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 0.5%;
+}
+/*villa*/
+#t5vitri {
+  position: relative;
+  width: 100%;
+}
+#t5vitri p{
+  font-size: 19px;
+color: #fff;
+text-align: center;
+}
+#chumanh2 {
+  position: relative;
+  width: 100%;
+  margin-top: 2%;
+}
+#chumanh2 img{
+  width: 98%;height: 60vh;
+  object-fit:fill;
+  border-radius: 2%;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 0.5%;
+}
+
+#t6vitri {
+  position: relative;
+  width: 100%;
+}
+#t6vitri p{
+  font-size: 19px;
+color: #fff;
+text-align: center;
+}
+#chumanh3 {
+  position: relative;
+  width: 100%;
+  margin-top: 2%;
+}
+#chumanh3 img{
+  width: 98%;height: 60vh;
+  object-fit:fill;
+  border-radius: 2%;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 0.5%;
+}
+
+/* nút gọi ngay*/
+ .call-button {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            max-width: 300px;
+            padding: 15px 0;
+            text-align: center;
+            background-color: #FF0000;
+            color: #FFFF00;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            margin-left: 2%;
+            margin-top: 3px;
+        }
+
+        .call-button:hover {
+            transform: scale(1.05);
+        }
+
+        .call-button:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background-color: rgba(255, 92, 92, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s ease;
+            z-index: 0;
+        }
+
+        .call-button:hover:before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .call-button span {
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            animation: pulse5 1.5s infinite ease-in-out;
+        }
+
+        @keyframes pulse5 {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+/*Chính Sách*/
+#chumanhcsbh {
+  position: relative;
+  width: 100%;
+  margin-top: 2%;
+}
+#chumanhcsbh img{
+  width: 14.5%;height: 43vh;
+  object-fit:fill;
+  border-radius: 2%;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 0.5%;
+}
+/*gọi điện thoại góc trái*/
+.contact-fixed {
+  display: none;
+    position: fixed;
+    bottom: 20px;  /* Cách mép dưới màn hình 20px */
+    left: 20px;   /* Cách mép phải màn hình 20px */
+    z-index: 1000;
+    background-color: #FF4500;  /* Màu nền nổi bật (cam đỏ) */
+    padding: 15px 20px;  /* Khoảng cách bên trong */
+    border-radius: 30px;  /* Góc bo tròn */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  /* Đổ bóng */
+    transition: all 0.3s ease;  /* Hiệu ứng khi di chuột */
+    text-align: center;
+}
+
+.contact-fixed:hover {
+    background-color: #FF6347;  /* Đổi màu khi hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);  /* Tăng đổ bóng khi hover */
+    transform: scale(1.05);  /* Phóng to khi hover */
+}
+
+.contact-fixed a {
+    text-decoration: none;
+    color: white;  /* Màu chữ */
+    font-size: 18px;  /* Kích thước chữ */
+    font-weight: bold;  /* Chữ đậm */
+    
+}
+
+.contact-text {
+    display: block;
+    white-space: nowrap;  /* Không xuống dòng */
+}
+
+/*nội dung hiển thi*/
+.viewer-counter {
+    position: fixed;
+    top: 47px;    /* Cách mép trên màn hình 20px */
+    left: 20px;   /* Cách mép trái màn hình 20px */
+    z-index: 1000;
+    background-color: #333;  /* Màu nền tối */
+    color: white;  /* Màu chữ */
+    padding: 10px 20px;  /* Khoảng cách bên trong */
+    border-radius: 8px;  /* Góc bo tròn */
+    font-size: 18px;  /* Kích thước chữ */
+    font-weight: bold;  /* Chữ đậm */
+    font-family:Roboto-Black;  /* Font chữ hiện đại */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Đổ bóng */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 250px;  /* Đảm bảo ô không quá nhỏ */
+    text-align: center;
+}
+
+
+/* thiết bị tương ứng */
+/*width lớn 2*/
+
+@media screen and (max-width: 2850px){
+
+ #two #anhnen {height: 40%}
+ iframe {height: 1200px}
+ #chumanhcsbh img{height: 40vh}
+ #t3vitri p{font-size: 12px}
+ #chumanh2 img{height: 75vh}
+ #chumanh img{height: 60vh}
+ #chumanh1 img{height: 45vh}
+ #chumanh3 img{height: 80vh}
+ #cuoi img{height: 90vh}
+}
+/*
+@media screen and (max-width: 2620px){
+
+
+}
+
+
+
+@media screen and (max-width: 2420px){
+ 
+}
+
+*/
+@media screen and (max-width: 2300px){
+ #chumanh img{height: 50vh}
+#chumanhcsbh img{height: 35vh}
+
+}
+
+
+@media screen and (max-width: 2300px) and (max-height: 960px) {
+iframe{height: 600px}
+#chumanhcsbh img{height: 45vh}
+} 
+/*
+@media screen and (max-width: 2050px) and (max-height: 1160px) {
+ 
+
+}
+
+
+@media screen and (max-width: 2000px) and (max-height: 900px) {
+
+
+} 
+
+@media screen and (max-width: 1900px) and (max-height: 1100px) {
+
+ 
+}
+
+@media screen and (max-width: 1900px) and (max-height: 850px) {
+ 
+ 
+}*/
+
+@media screen and (max-width: 1800px) and (max-height: 1000px) {
+ #chumanhcsbh img{height: 39vh}
+  .menu-toggle{display: none}
+
+}
+/*điện thoại*/
+ /*
+@media screen and (max-width: 1380px) and (max-height: 800px) {
+ 
+}*/
+
+
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+
+    iframe {height: 1000px}
+#chumanh img {width: 98%; height: 29vh}
+#cuoi img {height: 40vh}
+#layuottangs1 img {width: 98%; height: 42vh}
+#layuotcans1 img {width: 98%; height: 42vh}
+#layouttangs2 img{margin-left: 0.7%}
+#layuotcans2 img{width: 98%; height: 42vh}
+#layuotcans3 img{height: 20vh}
+#chumanh1 img{height: 20vh}
+#chumanh2 img{height: 30vh}
+#chumanh3 img{height: 30vh}
+#chumanhcsbh img{height: 16vh}
+ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-toggle.active + ul {
+    display: flex;
+  }
+  ul li a {color: #FFFF00}
+
+  .contact-fixed {
+  display: block;}
+
+
+}
+
+@media screen and (max-width: 912px) and (max-height: 1368px) {
+ #cuoi img{height: 30vh}
+ #layuottangs1 img{height: 35vh}
+ #chumanhcsbh img{height: 14vh}
+ #layouttangs2 img{height: 20vh}
+ 
+ 
+ ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-toggle.active + ul {
+    display: flex;
+  }
+  ul li a {color: #FFFF00}
+}
+
+@media screen and (max-width: 820px) and (max-height: 1180px) {
+
+ ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-toggle.active + ul {
+    display: flex;
+  }
+  iframe{height: 600px}
+  #chumanh img{height: 40vh}
+  #tenvideo #tenvideo1{font-size: 9px}
+
+}
+/*
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+ 
+}
+*/
+
+@media screen and (max-width: 540px) and (max-height: 720px) {
+ form{max-width: 450px}
+ form p{font-size: 14px}
+ #ttvitri p{font-size: 7px}
+ iframe{height: 400px}
+ .contact-fixed a {font-size: 15px}
+ .menu-toggle{padding: 7px}
+ .menu-toggle .hamburger-icon{font-size: 20px}
+ .menu-toggle .menu-text{font-size: 14px}
+}
+
+@media screen and (max-width: 430px) and (max-height: 932px) {
+
+#dn{margin-left: 15px}
+iframe{height: 250px}
+#chumanh img{height: 23vh}
+    #cuoi img{height: 20vh}
+    form h2{font-size: 22px}
+    #layuottangs1 img {height: 27vh}
+    #layuotcans1 img{height: 27vh}
+    #layuotcans2 img{height: 27vh}
+    #layuotcans3 img{height: 14vh}
+    #vitri #vitricuoi{font-size: 7px}
+    #ttvitri p {font-size: 5px}
+    #chumanh2 img{height: 26vh}
+         #chumanh3 img{height: 26vh}
+         #productType{font-size: 19px}
+.menu-toggle{padding: 7px}
+ .menu-toggle .hamburger-icon{font-size: 15px}
+ .menu-toggle .menu-text{font-size: 16px}
+ .contact-fixed a{font-size: 11px}
+}
+/*
+@media screen and (max-width: 412px) and (max-height: 915px) {
+
+}
+
+
+@media screen and (max-width: 414px) and (max-height: 896px) {
+ 
+}
+*/
+@media screen and (max-width: 414px) and (max-height: 736px) {
+     form p{font-size: 12px}
+     #chumanh img{height: 29vh}
+         #cuoi img {height: 29vh}
+         #layuotcans1 img {height: 30vh}
+#layuotcans2 img{height: 30vh}
+    #chumanhcsbh img{height: 12vh}
+    .menu-toggle .hamburger-icon {font-size: 10px}
+}
+
+@media screen and (max-width: 390px) and (max-height: 844px) {
+ form h2{font-size: 20px}
+ form p{font-size: 10px}
+     #tenvideo #tenvideo1 {font-size:7px }
+     #layuottangs1 img{height: 24vh}
+     #layuotcans1 img{height: 24vh}
+     #layuotcans2 img{height: 24vh}
+         #chumanhcsbh img{height: 9.5vh}
+         #t3vitri p{font-size: 10px}
+         .contact-fixed a {font-size: 9px}
+         .menu-toggle .hamburger-icon{font-size: 15px}
+         
+}
+
+@media screen and (max-width: 375px) and (max-height: 812px) {
+ #dn{font-size: 20px}
+     #chumanh1 img{height: 12vh}
+
+}
+
+@media screen and (max-width: 375px) and (max-height: 667px) {
+ #layuottangs1 img{height: 27vh}
+ #layuotcans1 img{height: 27vh}
+ #layouttangs2 img{height: 14vh}
+     #layuotcans2 img{height: 27vh}
+     #tenvideo #tenvideo1{font-size: 5px}
+     #chumanhcsbh img{height: 11vh}
+}
+
+
+
+@media screen and (max-width: 360px) and (max-height: 740px) {
+ form h2{font-size: 19px}
+ #vitri #vitricuoi{font-size: 6px}
+     #productType{font-size: 16px}
+     #vitri h3{font-size: 18px}
+}
+
+@media screen and (max-width: 320px) and (max-height: 568px) {
+#noidung1 h2{font-size: 18px}
+#layuotcans1 img{height: 30vh}
+#layuotcans2 img{height: 30vh}
+#layuotcans3 img{height: 16vh}
+#dn{margin-left: 11px}
+#dautiensun #dautiensunh1{font-size: 18px}
+#vitri h3{font-size: 15px}
+}
