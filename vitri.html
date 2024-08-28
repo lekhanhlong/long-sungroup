@@ -59,6 +59,50 @@ Sun Symphony Residence Đà Nẵng không chỉ là một dự án bất động
 <body>
 
 
+<!-- Form đăng ký -->
+<div id="popupFormNew" class="form-popup-new">
+    <div class="form-container-new">
+        <h10>ĐĂNG KÝ NHẬN BẢNG GIÁ SUN SYMPHONY ĐÀ NẴNG</h10>
+        <form action="https://formspree.io/f/mnnaggvp" method="POST">
+            <label for="name-new"><b>Họ và Tên</b></label>
+            <input type="text" placeholder="Tên của quý khách" id="name-new" name="name-new" class="input-new" required>
+
+            <label for="phone-new"><b>Số điện thoại</b></label>
+            <input type="tel" placeholder="Số điện thoại" id="phone-new" name="phone-new" class="input-new" required>
+            <select id="productType" name="productType" required>
+                <option value="Loại hình sản phẩm">Chọn loại hình sản phẩm</option>
+                <option value="Căn hộ cao cấp">Căn hộ cao cấp</option>
+                <option value="Town House kinh doanh">Town House kinh doanh</option>
+                <option value="Biệt thự Villa VIP">Biệt thự Villa VIP</option>
+            </select>
+
+            <button type="submit" class="btn-new"> Nhận bảng giá</button>
+            <button type="button" class="btn-new cancel-new" onclick="closeFormNew()">Đóng</button>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    function showFormNew() {
+    document.getElementById("popupFormNew").style.display = "flex"; // Hiển thị form
+}
+
+function closeFormNew() {
+    document.getElementById("popupFormNew").style.display = "none"; // Đóng form
+}
+
+function startViewerCounter() {
+    // Bắt đầu hiển thị nội dung đầu tiên và lặp lại sau 25 giây
+    updateViewerText();
+    setInterval(updateViewerText, 25000); // 25000ms = 25 giây
+}
+
+window.onload = function() {
+    // Gọi cả hai chức năng khi trang web được tải xong
+    startViewerCounter();  // Hiển thị thông báo số người xem
+    setTimeout(showFormNew, 20000);  // Hiển thị form sau 20 giây
+};
+</script>
+
 	<div class="contact-fixed">
     <a href="tel:0703954504">
         <span class="contact-text">Liên hệ ngay: 0703.954.540</span>
@@ -111,7 +155,7 @@ function startViewerCounter() {
     setInterval(updateViewerText, 25000);  // 35000ms = 35 giây
 }
 
-window.onload = startViewerCounter;
+
 </script>
 
 
