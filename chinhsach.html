@@ -103,15 +103,15 @@ function closeFormNew() {
 }
 
 function startViewerCounter() {
-    // Bắt đầu hiển thị nội dung đầu tiên và lặp lại sau 25 giây
+    // Bắt đầu hiển thị nội dung đầu tiên và lặp lại sau 15 giây
     updateViewerText();
-    setInterval(updateViewerText, 25000); // 25000ms = 25 giây
+    setInterval(updateViewerText, 15000); // 15000ms = 15 giây
 }
 
 window.onload = function() {
     // Gọi cả hai chức năng khi trang web được tải xong
     startViewerCounter();  // Hiển thị thông báo số người xem
-    setTimeout(showFormNew, 20000);  // Hiển thị form sau 20 giây
+    setTimeout(showFormNew, 10000);  // Hiển thị form sau 10 giây
 };
 </script>
 
