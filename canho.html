@@ -93,24 +93,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </div>
 <script type="text/javascript">
-    function showFormNew() {
-    document.getElementById("popupFormNew").style.display = "flex"; // Hiển thị form
+    let formShown = false;  // Biến trạng thái để kiểm soát việc hiển thị lại form
+let formSubmitted = false; // Biến trạng thái để kiểm soát nếu form đã được gửi
+
+function showFormNew() {
+    // Kiểm tra nếu form chưa được hiển thị hoặc đã bị đóng và form chưa được gửi
+    if (!formShown && !formSubmitted) {
+        document.getElementById("popupFormNew").style.display = "flex"; // Hiển thị form
+        formShown = true; // Đánh dấu form đã hiển thị
+    }
 }
 
 function closeFormNew() {
     document.getElementById("popupFormNew").style.display = "none"; // Đóng form
+    formShown = false; // Đặt lại trạng thái cho phép hiển thị lại form
+
+    // Thiết lập lại để hiển thị form sau 25 giây khi đóng form
+    if (!formSubmitted) {
+        setTimeout(showFormNew, 25000); // 25000ms = 25 giây
+    }
 }
 
-function startViewerCounter() {
-    // Bắt đầu hiển thị nội dung đầu tiên và lặp lại sau 15 giây
-    updateViewerText();
-    setInterval(updateViewerText, 15000); // 15000ms = 15 giây
+function handleSubmit(event) {
+    // Ngăn chặn hành động mặc định của form nếu cần
+    formSubmitted = true; // Đánh dấu form đã được gửi
+    closeFormNew(); // Đóng form sau khi gửi
 }
+
+// Gắn sự kiện submit vào form
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('form').addEventListener('submit', handleSubmit);
+});
 
 window.onload = function() {
-    // Gọi cả hai chức năng khi trang web được tải xong
     startViewerCounter();  // Hiển thị thông báo số người xem
-    setTimeout(showFormNew, 10000);  // Hiển thị form sau 10 giây
+
+    // Hiển thị form lần đầu sau 9 giây nếu form chưa được gửi
+    if (!formSubmitted) {
+        setTimeout(showFormNew, 9000);  // 9000ms = 9 giây
+    }
 };
 </script>
 
