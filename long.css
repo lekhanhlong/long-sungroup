@@ -48,24 +48,33 @@ ul li {
   transition: 0.5s;
 }
 
-ul li:hover {
-  border-radius: 50px;
+ul li a {
+  display: flex; /* Để đảm bảo nội dung bên trong thẻ <a> được căn chỉnh đúng */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Thẻ <a> chiếm toàn bộ chiều rộng của <li> */
+  height: 100%; /* Thẻ <a> chiếm toàn bộ chiều cao của <li> */
+  border-radius: 50px; /* Để làm cho thẻ <a> có cùng hình dạng với <li> */
+  text-decoration: none;
+  color: #fff;
+}
+
+ul li:hover a {
   background: linear-gradient(45deg, var(--i), var(--j));
   box-shadow: inset 9px 9px 1px rgba(0, 0, 0, 0.5),
               inset -5px -5px 1px rgba(0, 0, 0, 0.7);
 }
 
+ul li:hover ion-icon {
+  font-size: 14px;
+}
+
 ul li ion-icon {
-  color: #fff;
+  color: #FFFF33;
   font-size: 18px;
   transition: 0.5s;
   transition-delay: 0s;
   transform: translateX(-60px);
-}
-
-
-ul li:hover ion-icon {
-  font-size: 14px;
 }
 
 ul li span {
@@ -73,7 +82,7 @@ ul li span {
 }
 
 ul li .title {
-  color: #fff;
+  color: rgba(255, 255, 0);
   font-size: 15px;
   transform: scale(1);
   transition: 0.5s;
@@ -83,11 +92,6 @@ ul li .title {
 
 ul li:hover .title {
   font-size: 10px;
-}
-
-ul li a {
-  text-decoration: none;
-  color: #fff;
 }
 
 .menu-toggle {
