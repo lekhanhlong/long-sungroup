@@ -68,6 +68,20 @@ ul li:hover a {
 ul li:hover ion-icon {
   font-size: 14px;
 }
+ul li img {
+    width: 24px; /* Kích thước của ảnh */
+    height: 24px; /* Kích thước của ảnh */
+    transition: 0.5s; /* Thời gian chuyển đổi hiệu ứng */
+    transition-delay: 0s;
+  transform: translateX(-60px);
+   object-fit: contain;
+}
+
+ul li:hover img {
+width: 14px;
+height: 14px;
+
+}
 
 ul li ion-icon {
   color: #FFFF33;
@@ -98,7 +112,7 @@ ul li:hover .title {
   display: none;
   cursor: pointer;
   font-size: 20px;
-  padding: 10px;
+  padding: 1px;
   color: #FF0000;
   background-color: #333;
   display: flex;
@@ -107,12 +121,20 @@ ul li:hover .title {
 }
 
 .menu-toggle .hamburger-icon {
-  font-size: 30px;
+  font-size: 39px;
   margin-right: 10px;
+}
+.menu-toggle img.form-image{
+  width: 59px; /* Điều chỉnh kích thước để phù hợp */
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+    left: 1%;
+    position: absolute;
 }
 
 .menu-toggle .menu-text {
-  font-size: 16px;
+  font-size: 39px;
   -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
 outline: none;animation: sang 5s linear infinite;
 }
@@ -155,8 +177,8 @@ outline: none;animation: sang 5s linear infinite;
   font-size: 27px;
   color:  #FFF;
   margin-top: 10px;
- }
-
+  }
+ 
   #dautiensun{width: 100%}
  #dautiensun #dautiensunh1 {
   position: relative;
@@ -943,7 +965,9 @@ text-align: center;
     width: 80%;
     max-width: 500px;
     margin: auto;
+   
 }
+
 #name-new { width: 100%;
     padding: 12px;
     margin: 10px 0 20px 0;
@@ -1074,6 +1098,7 @@ iframe{height: 600px}
  #chumanhcsbh img{height: 39vh}
   .menu-toggle{display: none}
 
+
 }
 /*điện thoại*/
  /*
@@ -1175,9 +1200,9 @@ ul {
  #ttvitri p{font-size: 7px}
  iframe{height: 400px}
  .contact-fixed a {font-size: 15px}
- .menu-toggle{padding: 7px}
+ .menu-toggle img.form-image{width: 29px}
  .menu-toggle .hamburger-icon{font-size: 20px}
- .menu-toggle .menu-text{font-size: 14px}
+ .menu-toggle .menu-text{font-size: 19px}
 }
 
 @media screen and (max-width: 433px) and (max-height: 935px) {
@@ -1197,9 +1222,9 @@ iframe{height: 250px}
          #chumanh3 img{height: 26vh}
          #chumanhcsbh img{height: 10vh}
          #productType{font-size: 19px}
-.menu-toggle{padding: 7px}
+.menu-toggle img.form-image{width: 25px}
  .menu-toggle .hamburger-icon{font-size: 20px}
- .menu-toggle .menu-text{font-size: 16px}
+ .menu-toggle .menu-text{font-size: 19px}
  .contact-fixed a{font-size: 11px}
  .form-container-new h10{font-size: 11px}
  #name-new{padding: 7px; margin: 10px 0 10px 0; font-size: 17px}
@@ -1230,7 +1255,7 @@ iframe{height: 250px}
          #layuotcans1 img {height: 30vh}
 #layuotcans2 img{height: 30vh}
     #chumanhcsbh img{height: 12vh}
-    .menu-toggle .hamburger-icon {font-size: 10px}
+    .menu-toggle .hamburger-icon {font-size: 19px}
 }
 
 @media screen and (max-width: 390px) and (max-height: 844px) {
@@ -1243,7 +1268,7 @@ iframe{height: 250px}
          #chumanhcsbh img{height: 9.5vh}
          #t3vitri p{font-size: 10px}
          .contact-fixed a {font-size: 9px}
-         .menu-toggle .hamburger-icon{font-size: 15px}
+         .menu-toggle .hamburger-icon{font-size: 19px}
          .form-container-new h10{font-size: 10px}
          
 }
