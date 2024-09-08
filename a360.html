@@ -63,7 +63,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" type="text/css" href="t360.css">
     <link rel="stylesheet" type="text/css" href="font.css">
 
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Sun Symphony Residence Đà Nẵng | Toàn cảnh 360 dự án Sun Symphony Đà Nẵng</title>
     
     <title>SUN SYMPHONY RESIDENCE 
@@ -140,6 +141,10 @@ Dự án Sun Symphony Residence Đà Nẵng tọa lạc tại vị trí Vàng hi
     video.addEventListener('ended', function() {
         panorama.style.top = "0";
     });
+    // Fallback để đảm bảo iframe hiển thị ngay cả khi video không tải
+video.addEventListener('error', function() {
+    panorama.style.top = "0";
+});
 
     // Mở form liên hệ
     function openContactForm() {
