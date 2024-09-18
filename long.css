@@ -546,17 +546,24 @@ form {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #FF0000;
+
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+    background: rgba(255,0,0,0.3);
+-webkit-backdrop-filter: blur(1px);
+backdrop-filter: blur(1px);
+border: 1px solid rgba(255,0,0,0.15);
 }
 
 .zalo-circle {
-    background-color: #0084ff; /* Màu xanh Zalo */
+   background: rgba(0,132,255,0.3);
+-webkit-backdrop-filter: blur(1px);
+backdrop-filter: blur(1px);
+border: 1px solid rgba(0,132,255,0.15);
 }
 
 .icon-circle:hover, .zalo-circle:hover {
@@ -663,14 +670,17 @@ form {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #4267B2; /* Màu xanh Facebook */
-    display: flex;
+        display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     overflow: hidden; /* Đảm bảo hiệu ứng tỏa ra không vượt quá biểu tượng */
+background: rgba(8,61,255,0.45);
+-webkit-backdrop-filter: blur(1px);
+backdrop-filter: blur(1px);
+border: 1px solid rgba(8,61,255,0.225);
 }
 
 .facebook-circle ion-icon {
@@ -695,14 +705,18 @@ form {
     align-items: center;
     justify-content: center;
     padding: 10px 15px;
-    background-color: #FF5733;
     color: white;
-    border: none;
-    border-radius: 50px;
+        border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    background: rgba(255,0,0,0.3);
+
+backdrop-filter: blur(1px);
+border: 1px solid rgba(255,0,0,0.15);
+
+box-shadow: -0.5px 0.5px 20px 5px rgba(255, 0, 0, 0.73);
 }
 
 .bottom-right-buttons12 ion-icon {
@@ -926,12 +940,15 @@ text-align: center;
     bottom: 20px;  /* Cách mép dưới màn hình 20px */
     left: 20px;   /* Cách mép phải màn hình 20px */
     z-index: 1000;
-    background-color: #FF4500;  /* Màu nền nổi bật (cam đỏ) */
     padding: 15px 20px;  /* Khoảng cách bên trong */
     border-radius: 30px;  /* Góc bo tròn */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  /* Đổ bóng */
     transition: all 0.3s ease;  /* Hiệu ứng khi di chuột */
     text-align: center;
+    background: rgba(255,69,0,0.35);
+backdrop-filter: blur(1px);
+border: 1px solid rgba(255,69,0,0.175);
+box-shadow: -0.5px 0.5px 20px 5px rgba(255, 72, 5, 0.81);
 }
 
 .contact-fixed:hover {
