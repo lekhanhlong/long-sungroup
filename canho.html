@@ -569,9 +569,21 @@ margin-top: 2%;">LAYUOT CĂN HỘ TÒA S3 SUN SYMPHONY ĐÀ NẴNG</p>
 	<script type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
 	<script  nomodule  src ="https:// unkg .com / ionicons @ 5.5.2/dist/ionicons/ionicons.js"> </script>
 	<script type="text/javascript">
-		document.querySelector('.menu-toggle').addEventListener('click', function() {
+	document.querySelector('.menu-toggle').addEventListener('click', function() {
     this.classList.toggle('active');
-    document.querySelector('ul').classList.toggle('active');
+    const menu = document.querySelector('ul');
+    menu.classList.toggle('active');
+    
+    // Kiểm tra xem menu có đang mở không
+    if (menu.classList.contains('active')) {
+        // Thay đổi văn bản và biểu tượng khi menu được mở
+        document.querySelector('.menu-text').textContent = 'ĐÓNG';
+        document.querySelector('.hamburger-icon').textContent = '✕'; // Biểu tượng 'X' để đóng
+    } else {
+        // Khôi phục lại văn bản và biểu tượng khi menu được đóng
+        document.querySelector('.menu-text').textContent = 'MENU';
+        document.querySelector('.hamburger-icon').textContent = '☰'; // Biểu tượng ba gạch
+    }
 });
 	</script>
 
