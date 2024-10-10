@@ -147,13 +147,13 @@ window.onload = function() {
 };
 </script>
 
-
+<!--
 
 	<div class="contact-fixed">
     <a href="tel:0703954504">
         <span class="contact-text">Liên hệ ngay: 0703.954.540</span>
     </a>
-</div>
+</div>-->
 
 
 <div class="viewer-counter">
@@ -206,50 +206,44 @@ function startViewerCounter() {
 
 
 <div id="top">
-    <div class="menu-toggle">
-        <img src="img/logosunts.png" alt="Logo Sun Symphony" class="form-image">
-        <span class="hamburger-icon">&#9776;</span>
-        <span class="menu-text">MENU</span>
-    </div>
     <ul>
-        <li style="--i:#a955ff;--j:#B22222;">
+        <li>
             <a href="index.html">
-                <span class="icon"><img src="img/logosunts.png" alt="Logo Sun Symphony" ></span>
-                <span class="title">SUN SYMPHONY</span>
+                <span class="icon"><ion-icon name="home"></ion-icon></span>
+                <span class="title">Trang chủ</span>
             </a>
         </li>
-        <li style="--i:#8B5A2B;--j:#FF7F24;">
+        <li>
             <a href="vitri.html">
                 <span class="icon"><ion-icon name="navigate-circle-outline"></ion-icon></span>
-                <span class="title">VỊ TRÍ</span>
+                <span class="title">Vị trí</span>
             </a>
         </li>
-        <li style="--i:#a955ff;--j:#FF4040;">
+        <li>
             <a href="canho.html">
                 <span class="icon"><ion-icon name="dice-outline"></ion-icon></span>
-                <span class="title">CĂN HỘ</span>
+                <span class="title">Căn hộ</span>
             </a>
         </li>
-        <li style="--i:#FF0000;--j:#FF4500;">
+        <li>
             <a href="villa.html">
                 <span class="icon"><ion-icon name="sparkles-outline"></ion-icon></span>
-                <span class="title">VILLA</span>
+                <span class="title">Villa</span>
             </a>
         </li>
-        <li style="--i:#FFE1FF;--j:#8B7B8B;">
+        <li>
             <a href="chinhsach.html">
                 <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
-                <span class="title">CHÍNH SÁCH</span>
+                <span class="title">Chính sách</span>
             </a>
         </li>
-        <li style="--i:#a955ff;--j:#ea51ff; background-color:#FF0000;">
+        <li>
             <a href="tel:0703954504">
                 <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
                 <span class="title">0703.954.504</span>
             </a>
         </li>
     </ul> 
-    <hr style="width: 30%;margin-right: 50%;margin-left: 35%;">
 </div>
 
 
@@ -577,26 +571,7 @@ margin-top: 2%;">LAYUOT CĂN HỘ TÒA S3 SUN SYMPHONY ĐÀ NẴNG</p>
 	<script type="text/javascript"></script>
 	<script type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
 	<script  nomodule  src ="https:// unkg .com / ionicons @ 5.5.2/dist/ionicons/ionicons.js"> </script>
-	<script type="text/javascript">
-	document.querySelector('.menu-toggle').addEventListener('click', function() {
-    this.classList.toggle('active');
-    const menu = document.querySelector('ul');
-    menu.classList.toggle('active');
-    
-    // Kiểm tra xem menu có đang mở không
-    if (menu.classList.contains('active')) {
-        // Thay đổi văn bản và biểu tượng khi menu được mở
-        document.querySelector('.menu-text').textContent = 'ĐÓNG';
-        document.querySelector('.hamburger-icon').textContent = '✕'; // Biểu tượng 'X' để đóng
-    } else {
-        // Khôi phục lại văn bản và biểu tượng khi menu được đóng
-        document.querySelector('.menu-text').textContent = 'MENU';
-        document.querySelector('.hamburger-icon').textContent = '☰'; // Biểu tượng ba gạch
-    }
-});
-	</script>
-
-
+	
 <script type="text/javascript">
     gsap.registerPlugin(ScrollTrigger);
 
